@@ -1,0 +1,22 @@
+
+{% extends "demo_app/base.html" %}
+
+{% block title %}
+  Test
+{% endblock %}
+
+{% block left-column %}
+  <button type="button" class="btn btn-success btn-lg">GET</button>
+
+  <ul id="seconds">
+  	<li class="one" id="one">List item #1</li>
+  </ul>
+{% endblock %}
+
+{% block right-column %}
+
+  {% csrf_token %}  <!-- Without passing this post request will fail in django -->
+
+  <ul id="right"></ul>
+
+{% endblock %}
