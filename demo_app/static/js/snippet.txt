@@ -1,0 +1,3 @@
+$('#one').removeClass('one');
+	$('#seconds').append('<li>This is the item#2 </li>');
+	$('#one').addClass('cool');
